@@ -1,0 +1,35 @@
+.llm__header{
+    display: flex;
+}
+.llm__header-content{
+    
+    flex:1;
+    display :flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.llm__header-content h1,h2{
+    padding: 10px;
+}
+.llm__header-button{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+.llm__header-button button{
+    padding: 1rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,145 @@
+.llm__pricing {
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+.llm__pricing-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  color: #333;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.llm__pricing-content-heading h2 {
+ 
+  flex-shrink: 0;
+  text-align: center;
+  color: #ff4820;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.llm__pricing-content-plans{
+    display: flex;
+  justify-content: space-around;
+  margin-top: 20px; 
+}
+.llm__pricing-content-plans-starter h2{
+    color: #000;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.llm__pricing-content-plans-pro h2{
+    padding-left: 30px;
+    color: #000;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.llm__pricing-content-plans-teamPlans h2{
+    
+    color: #000;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+.llm__pricing-content-plans-starter button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.llm__pricing-content-plans-pro button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.llm__pricing-content-plans-teamPlans button{
+    margin-left: 60px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.llm__get{
+    margin-top :20px; ;
+}
+.llm__get h2{
+    text-align: left;
+    color: #333;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+}
+.llm__get h3{
+    text-align: left;
+    color: #333;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+}
+.llm__get button{
+    margin-top:10px ;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
