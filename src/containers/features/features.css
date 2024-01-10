@@ -40,7 +40,7 @@
 
 .llm__features-content-item h1 {
   margin-bottom: 10px;
-  color: #ff4820;
+  color: #708090;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: var(--font-family);
   font-size: 30px;
@@ -50,9 +50,10 @@
 }
 
 .llm__features-content-item img {
-  width: 100px; /* Set the desired width for the images */
+  width: 150px; /* Set the desired width for the images */
   height: auto;
   padding: 30px 10px;
+  margin-right: 10px;
   margin-bottom: 10px;
 }
 .llm__features-content-item p {

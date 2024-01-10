@@ -17,7 +17,7 @@
   margin-bottom: 20px;
   width: 100%;
   color: #333;
-  font-family: Montserrat;
+  font-family: var(--font-family);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -33,10 +33,10 @@
 }
 
 .llm__about-content p {
-  padding-top: 150px;
+  padding-top: 50px;
   color: #000;
   font-family: var(--font-family);
-  font-size: 20px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -59,29 +59,47 @@
     align-items: flex-start;
 
 } */
-.llm__about-process {
-  margin-top: 50px; /* Adjust margin as needed */
-}
-
 .llm__about-process-icons {
-  padding-right: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around; /* Distribute items evenly */
   text-align: center;
 }
+
+.llm__about-process-icons > div {
+  flex: 1; /* Distribute available space equally among child elements */
+  margin: 0 10px; /* Set the desired horizontal spacing between items */
+}
+
 .llm__about-process-icons p {
-  padding: 40px;
+  padding: 20px 0; /* Adjust vertical padding as needed */
   color: #000;
   font-family: var(--font-family);
-  font-size: 15px;
-  font-style: normal;
+  font-size: 20px;
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
 }
 
-.llm__about-process-icons img {
-  width: 100px; /* Set the desired width */
-  height: 100px; /* Set the desired height */
-  margin: 0 10px; /* Adjust margin as needed */
+/* Adjust image styles */
+.llm__about-process-icons-register img {
+  width: 100px; /* Set the desired width for the createReport image */
+  height: 100px; /* Set the desired height for the createReport image */
+  margin: 12px 10px;
 }
+.llm__about-process-icons-login img {
+  width: 100px; /* Set the desired width for the createReport image */
+  height: 100px; /* Set the desired height for the createReport image */
+  margin: 12px 10px;
+}
+.llm__about-process-icons-createReport img {
+  width: 70px; /* Set the desired width for the createReport image */
+  height: 70px; /* Set the desired height for the createReport image */
+  margin: 25px 10px;
+}
+
+
+/* .llm__about-process-icons img {
+  width: 100px; 
+  height: 100px;
+  margin: 0 10px; 
+} */

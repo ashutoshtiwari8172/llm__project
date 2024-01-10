@@ -25,7 +25,10 @@
   }
   
   .section__padding {
-    padding: 4rem 6rem;
+    padding-top: 4rem;
+    padding-bottom: 0;
+    padding-left:  6rem;
+    padding-right: 6rem;
   }
   
   .section__margin {

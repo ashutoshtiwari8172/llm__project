@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutImg from '../../assets/about_image 1.png';
-import signUp from  '../../assets/sign-up.png'
-import logIn from "../../assets/login 1.png"
+import signUp from  '../../assets/signUp.png'
+import logIn from "../../assets/133204467-security-login-icon-simple-element-from-web-development-icons-collection-creative-security-login.jpg"
 import createReport from "../../assets/createReport.png"
 import './about.css';
 
@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className='llm__about section__padding' id='about'>
       <div className='llm__about-heading'>
-        <h1>About</h1>
+        {/* <h1>About</h1> */}
       </div>
       <div className='llm__about-mid'>
         <div className='llm__about-content'>
@@ -25,14 +25,14 @@ const About = () => {
       <div className='llm__about-process'>
         <div className='llm__about-process-icons'>
 
-          <div><img src={signUp} alt='sign_up' />
-          <p>Register through your email,confirm the mail </p></div>
+          <div className='llm__about-process-icons-register'><img src={signUp} alt='sign_up' />
+          <p>Register your email. </p></div>
           
-          <div><img src={logIn} alt='sign_up' />
-          <p>Click on the  link go to the login and enter your details </p>
+          <div className='llm__about-process-icons-login' ><img src={logIn} alt='sign_up' />
+          <p>Login and enter your details. </p>
           </div>
-          <div><img src={createReport} alt='create_report ' />
-          <p> Create customized reports</p>
+          <div  className='llm__about-process-icons-createReport'><img src={createReport} alt='create_report ' />
+          <p> Create customized reports and generate AI powered summary.</p>
           
           </div>
           

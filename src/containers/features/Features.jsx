@@ -1,5 +1,5 @@
 import React from 'react'
-import customizalbe from "../../assets/customizable.png"
+import customizalbe from "../../assets/customizable-icon-14.jpg"
 import ai from "../../assets/ai.png"
 
 import './features.css'
