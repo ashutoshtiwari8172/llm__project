@@ -1,24 +1,24 @@
+/* Regular styles for your about section */
 .llm__about {
-  /* display: flex;
-    align-items: flex-start; */
   justify-content: space-around;
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 20px;
+  max-width: 1700px;
+  margin-bottom: 2rem;
 }
 
 .llm__about-mid {
   display: flex;
   align-items: flex-start;
+  padding-bottom: 4rem;
 }
 
-.llm__about-heading {
+.llm__about-heading h1{
   text-align: center;
   margin-bottom: 20px;
   width: 100%;
   color: #333;
   font-family: var(--font-family);
-  font-size: 20px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -33,12 +33,12 @@
 }
 
 .llm__about-content p {
-  padding-top: 50px;
+  padding-top: 125px;
   color: #000;
   font-family: var(--font-family);
   font-size: 22px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
 }
@@ -50,28 +50,41 @@
 }
 
 .llm__about-img img {
-  width: 531px;
-  height: 433px;
-  flex-shrink: 0;
+  width: 100%; /* Set image width to 100% to make it responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add margin or adjust as needed */
 }
-/* .llm__about-process-icons{
-    display: flex;
-    align-items: flex-start;
 
-} */
+.llm__about-process {
+  padding: 2rem 0rem;
+}
+.llm__about-process p{ 
+  padding-bottom: 3rem;
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+.llm__about-process button{
+  
+}
 .llm__about-process-icons {
   display: flex;
-  justify-content: space-around; /* Distribute items evenly */
+  justify-content: space-around;
   text-align: center;
+  padding: 3rem 0rem;
 }
 
 .llm__about-process-icons > div {
-  flex: 1; /* Distribute available space equally among child elements */
-  margin: 0 10px; /* Set the desired horizontal spacing between items */
+  flex: 1;
+  margin: 0 10px;
 }
 
 .llm__about-process-icons p {
-  padding: 20px 0; /* Adjust vertical padding as needed */
+  padding: 20px 0;
   color: #000;
   font-family: var(--font-family);
   font-size: 20px;
@@ -80,26 +93,121 @@
   text-transform: capitalize;
 }
 
-/* Adjust image styles */
+.llm__about-process-icons-login img{
+  width: 70px;
+  height: 70px;
+  margin: 30px 10px;
+}
+
 .llm__about-process-icons-register img {
-  width: 100px; /* Set the desired width for the createReport image */
-  height: 100px; /* Set the desired height for the createReport image */
-  margin: 12px 10px;
-}
-.llm__about-process-icons-login img {
-  width: 100px; /* Set the desired width for the createReport image */
-  height: 100px; /* Set the desired height for the createReport image */
-  margin: 12px 10px;
-}
-.llm__about-process-icons-createReport img {
-  width: 70px; /* Set the desired width for the createReport image */
-  height: 70px; /* Set the desired height for the createReport image */
-  margin: 25px 10px;
-}
-
-
-/* .llm__about-process-icons img {
-  width: 100px; 
+  width: 100px;
   height: 100px;
-  margin: 0 10px; 
-} */
+  margin: 15px 10px;
+}
+
+.llm__about-process-icons-createReport img {
+  width: 70px;
+  height: 70px;
+  margin: 30px 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1700px) {
+  .llm__about-img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .llm__about-content p{
+    padding-top: 90px;
+  }
+  .llm__about-img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .llm__about-content p {
+   
+    padding-top: 45px;
+  }
+  .llm__about-img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .llm__about-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .llm__about-content p {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .llm__about-img img {
+    width: 80%;
+    height: 100%;
+    padding-right: 30px;
+    margin-right: 50px;
+
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .llm__about-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .llm__about-img img {
+    width: 80%;
+    height: 100%;
+    margin-top: 20px;
+  }
+  .llm__about-heading h1{
+    font-size: 30px;
+  }
+  .llm__about-process-icons p{
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+
+  .llm__about-img img {
+    
+    width: 100%;
+    height: 100%;
+    padding-right: 0;
+    margin-right:0px ;
+    margin-top: 20px;
+  }
+  .llm__about-process-icons p{
+    font-size: 20px;
+  }
+
+
+ 
+  .llm__about-process-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

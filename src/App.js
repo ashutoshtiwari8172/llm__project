@@ -1,8 +1,8 @@
 import React from 'react'
 import { Navbar,Footer } from './components';
-import {Header,About, Features}  from './containers';
+import {Header,About, Features,Pricing}  from './containers';
 import './App.css'
-import Pricing from './containers/pricing/Pricing';
+
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

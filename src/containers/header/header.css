@@ -1,28 +1,44 @@
-.llm__header{
+/* Regular styles for your header */
+.llm__header {
     display: flex;
+    margin: 0 auto;
+    max-width: 1700px;
+    margin-bottom: 7rem;
 }
-.llm__header-content{
-    
-    flex:1;
-    display :flex;
+
+.llm__header-content {
+    flex: 1;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+}
+
+.llm__header-content h1{
+    padding: 10px;
+    font-size: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--font-family);
+    font-weight: 700;
+}
+.llm__header-content h2 {
+    padding: 10px;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--font-family);
+    font-weight: 700;
 
 }
-.llm__header-content h1,h2{
-    padding: 10px;
-    font-family: var(--font-family);
-}
-.llm__header-button{
-    
+
+.llm__header-button {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
     font-family: var(--font-family);
 }
-.llm__header-button button{
+
+.llm__header-button a{
     padding: 1rem 1rem;
     color: #fff;
     background: #FF4820;
@@ -34,4 +50,96 @@
     outline: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.llm__header-image  img{
+    width: 100%; /* Set image width to 100% to make it responsive */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 5px;
+    
+    margin-top: 20px; /* Add margin or adjust as needed */
+}
+
+/* Media queries */
+@media screen and (max-width:1345px) {
+    .llm__header-image img{
+        width: 90%; /* Set image width to 100% to make it responsive */
+        height: auto; /* Maintain aspect ratio */
+        padding-top: 15px;
+        
+        margin-top: 20px; /* Add margin or adjust as needed */
+    }
+    .llm__header-content h1
+    {
+        font-size: 30px;
+      
+    }
+    .llm__header-content h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .llm__header {
+        flex-direction: column;
+    }
+
+   
+    .llm__header-content h1 {
+        font-size: 40px;
+    }
+    .llm__header-content h2{
+        font-size: 30px;
+    }
+    .llm__header-image img{
+        width: 80%; /* Set image width to 100% for smaller screens */
+        max-width: 100%; /* Ensure image doesn't exceed its parent container */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .llm__header-content h1 {
+        font-size: 40px;
+    }
+    .llm__header-content h2{
+        font-size: 30px;
+    }
+    .llm__header-image img{
+        width: 80%; /* Set image width to 100% for smaller screens */
+        padding-left: 2rem;
+        max-width: 100%; /* Ensure image doesn't exceed its parent container */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .llm__header-content h1 {
+        font-size: 40px;
+    }
+    .llm__header-content h2{
+        font-size: 30px;
+    }
+    .llm__header-image img{
+        width: 90%; /* Set image width to 100% for smaller screens */
+        padding-left: 2rem;
+        max-width: 100%; /* Ensure image doesn't exceed its parent container */
+    }
+
+    .llm__header-button button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .llm__header-content h1 {
+        font-size: 30px;
+    }
+    .llm__header-content h2{
+        font-size: 25px;
+    }
+    .llm__header-image img{
+        width: 90%; /* Set image width to 100% for smaller screens */
+        padding-left: 2rem;
+        max-width: 100%; /* Ensure image doesn't exceed its parent container */
+    }
+    
 }

@@ -1,10 +1,13 @@
+/* Regular styles for your pricing section */
 .llm__pricing {
   justify-content: space-around;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 20px;
+  margin: 2rem auto;
+  max-width: 1700px; /* Adjust max-width as needed */
+ 
+  
 }
-.llm__pricing-heading {
+
+.llm__pricing-heading h1{
   text-align: center;
   margin-bottom: 20px;
   width: 100%;
@@ -15,91 +18,258 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+
 }
+
 .llm__pricing-content-heading h2 {
- 
   flex-shrink: 0;
   text-align: center;
   color: #333333;
-
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: var(--font-family);
   font-size: 30px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: normal;
+  padding-top: 2rem;
 }
-.llm__pricing-content-plans{
-    display: flex;
-  justify-content: space-around;
-  margin-top: 20px; 
-}
-.llm__pricing-content-plans-starter h2{
-    color: #000;
-font-family: var(--font-family);
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
 
-}
-.llm__pricing-content-plans-pro h2{
-    padding-left: 30px;
-    color: #000;
-font-family: var(--font-family);
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
 
-}
-.llm__pricing-content-plans-teamPlans h2{
-    
-    color: #000;
-font-family: var(--font-family);
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+/* ... (your existing CSS) ... */
 
+.llm__pricing-toggle-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.llm__pricing-content-plans-starter button{
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background: #FF4820;
+.llm__pricing-toggle-container p{
+  margin:0px 24px;
     font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FF4820;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #FF4820;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.llm__pricing-inner{
+  padding-top: 87px;
+}
+.llm__pricing-container{
+  position: relative;
+    width: 100%;
+ 
+    padding: 0 15px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+    margin-bottom: 88px;
+}
+.llm__pricing-items{
+  position: relative;
+    padding: 40px 32px;
+    background: #fdfaf8;
+    border-radius: 20px;
+}
+.llm__pricing-top{
+  margin-bottom: 32px;
+}
+.llm__pricing-title {
+  font-family: Urbane;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FF4820;
+  margin: 0 0 8px;
+}
+.llm__pricing-text{
+  font-family: Halcom;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #391a00;
+    opacity: .8;
+    margin: 0;
+}
+.llm__pricing-price{
+  color: #ea8973;
+    font-family: Urbane;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.llm__pricing-price span{
+  font-family: Urbane;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color:#FF4820;
+}
+.llm__pricing-button button{
+  background-color: #FF4820;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.llm__pricing-points p{
+  margin: 20px 40px;
+    font-family: Halcom;
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 25px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
+    line-height: 19px;
+    color: #FF4820;
+    opacity: .8;
 }
-.llm__pricing-content-plans-pro button{
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background: #FF4820;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
+.llm__pricing-points p::before{
+  content: '\2713'; /* Checkmark (HTML entity) */
+  position: absolute;
+  left: 50px;
+  color: #333333;
+  padding-bottom: 10px;
 }
-.llm__pricing-content-plans-teamPlans button{
-    margin-left: 30px;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background: #FF4820;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
+.llm__pricing-items:nth-child(2) {
+  background: #fff;
+  box-shadow: 0 29px 60px rgba(92, 36, 1, 0.19);
+  border-radius: 16px;
+}
+.llm__pricing-container .recommended{
+  position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #fdfaf8;
+    border-radius: 32px;
+    padding: 8px 10px;
+    font-family: Halcom;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF4820;
+    text-align: center;
+}
+/* Media queries */
+@media screen and (max-width: 1200px) {
+  .llm__pricing-content-heading h2 {
+    font-size: 24px;
+  }
+  .llm__pricing-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  
+
+  
+}
+
+@media screen and (max-width: 992px) {
+  .llm__pricing-content-heading h2 {
+    font-size: 22px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .llm__pricing-content-heading h2 {
+    font-size: 25px;
+  }
+  .llm__pricing-content-plans-starter button {
+    font-size: 16px;
+    padding: 0.4rem 0.8rem;
+  }
+  .llm__pricing-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .llm__pricing-heading h1{
+    font-size: 30px;
+  }
+  .llm__pricing-content-heading h2 {
+    font-size: 20px;
+  }
+  .llm__pricing-content-plans-starter button {
+    font-size: 14px;
+    padding: 0.3rem 0.6rem;
+  }
+  .llm__pricing-content-plans-starter p{
+    font-size: 15;
+  }
+  .llm__pricing-price span{
+    font-size: 30px;
+  }
 }

@@ -1,7 +1,14 @@
+
+
+
 .llm__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1700px;
 
     padding: 2rem 6rem;
     
@@ -15,27 +22,23 @@
 }
 
 .llm__navbar-links_logo {
-    margin-right: 2rem;
+    margin-right: 0rem;
 }
 
 .llm__navbar-links_logo img {
 
-    width: 200px;
-    height: 100px;
+    width:200 px;
+    height: 80px;
+    
 }
 
 .llm__navbar-links_container {
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
-.llm__navbar-sign {
-    margin-left: 80px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 
 .llm__navbar-links_container p,
 .llm__navbar-menu_container p {
@@ -51,21 +54,12 @@
     margin: 0 2rem;
     cursor: pointer;
 }
-.llm__navbar-sign p{
-    color: #5A5A5A;
-
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: capitalize;
-
-
-    margin: 0 3rem;
-    cursor: pointer;
-
+.llm__navbar-links_container p:hover,
+.llm__navbar-menu_container p:hover {
+    color:#FF4820; /* Change to your desired hover color */
+    /* Add any other styles you want to apply on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.llm__navbar-sign button,
 .llm__navbar-menu_container button {
     padding: 0.5rem 1rem;
     color: #fff;
@@ -113,11 +107,77 @@
     margin: 1rem 0;
 }
 
-.llm__navbar-menu_container-links-sign {
-    display: none;
-}
 
-@media screen and (max-width: 1050px) {
+/* Add these styles to navbar.css */
+
+.llm__navbar-links_container .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .llm__navbar-links_container .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .llm__navbar-links_container .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .llm__navbar-links_container .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+
+@media screen and (max-width: 1440px) {
+    
+
+    
+    .llm__navbar-links_logo img {
+
+        width: 200px;
+        height: 80px;
+        
+    }
+    .llm__navbar-links_container {
+        
+        margin-left: 100px;
+    }
+    
+}
+@media screen and (max-width: 1250px) {
+    
+
+    
+    .llm__navbar-links_logo img {
+
+        width: 200px;
+        height: 80px;
+        
+    }
+    .llm__navbar-links_container {
+        
+        margin-left: 100px;
+    }
+    .llm__navbar-sign {
+        margin-right: 3px;
+        margin-left: 0px;
+       
+    }
+}
+@media screen and (max-width: 1023px) {
     .llm__navbar-links_container {
         display: none;
     }
@@ -125,12 +185,43 @@
     .llm__navbar-menu {
         display: flex;
     }
-}
+    .llm__navbar-sign {
+        margin-left: 75px;
+    }
+    .llm__navbar-links_logo img {
 
-@media screen and (max-width: 700px) {
+        width: 200px;
+        height: 80px;
+        
+    }
+    .llm__navbar-sign {
+        display: none;
+    }
+    .llm__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
+@media screen and (max-width: 900px) {
     .llm__navbar {
         padding: 2rem 4rem;
     }
+    .llm__navbar-menu_container {
+        text-align: right;
+        top: 20px;
+    }
+    .llm__navbar-links_logo img {
+
+        width: 200px;
+        height: 80px;
+        
+    }
+    .llm__navbar-sign {
+        display: none;
+    }
+    .llm__navbar-menu_container-links-sign {
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -141,12 +232,19 @@
     .llm__navbar-sign {
         display: none;
     }
-
+    
     .llm__navbar-menu_container {
+        text-align: right;
         top: 20px;
     }
 
     .llm__navbar-menu_container-links-sign {
         display: block;
     }
+    .llm__navbar-links_logo img {
+
+    width: 200px;
+    height: 80px;
+    
+}
 }

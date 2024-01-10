@@ -1,0 +1,68 @@
+.diagonsticCenter{
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1700px;
+    margin-bottom: 2rem;
+}
+.diagnosticCenter-header{
+   
+    display: flex;
+    align-items: flex-start;
+
+}
+.diagnosticCenter-header-content p{
+    padding-top: 125px;
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+    
+}
+.diagnosticCenter-header-content button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.diagnosticCenter-header-img{
+   
+}
+.diagnosticCenter-header-img img{
+    width: 100%; /* Set image width to 100% to make it responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; 
+}
+@media screen and (max-width: 1024px){
+    .diagnosticCenter-header-img{
+
+        margin-left: 2rem;
+     }
+.diagnosticCenter-header-content p{
+    font-size: 20px;
+    padding-top: 20px;
+}
+}
+@media screen and (max-width: 764px){
+    
+.diagnosticCenter-header-content p{
+    font-size: 15px;
+    padding-top: 20px;
+}
+}
+@media screen and (max-width: 425px){
+    
+    .diagnosticCenter-header-content p{
+        font-size: 10px;
+        padding-top: 20px;
+    }
+    }
