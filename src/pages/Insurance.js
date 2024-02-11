@@ -14,7 +14,7 @@ const Insurance = () => {
      
         <div className='Insurance-header'>
             <div className='Insurance-header-content'>
-                <p>Welcome to a game-changing tool designed exclusively for insurance survey companies. Our platform is meticulously crafted to elevate the efficiency and precision of your insurance assessments..</p>
+                <p>Welcome to a game-changing tool designed exclusively for insurance survey companies. Our platform is meticulously crafted to elevate the efficiency and precision of your insurance assessments.</p>
                 <div className='Insurance-login'>
                 <a href="http://main.episum.com/login/">
           <button  type="button">Login</button>

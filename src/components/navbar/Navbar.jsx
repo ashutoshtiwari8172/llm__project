@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
+
 import { HashLink } from "react-router-hash-link";
-import logo from "../../assets/Untitled (12).png";
+import logo from "../../assets/Untitled (16).png";
 
 import "./navbar.css";
 
@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
         <div className="llm__navbar-links_container">
           <p>
-            <HashLink to="/#home">Home</HashLink>
+            <HashLink to="/#home" smooth>Home</HashLink>
           </p>
           <p>
             <HashLink to="/#about" smooth>
@@ -27,17 +27,20 @@ const Navbar = () => {
             </HashLink>
           </p>
           <p>
-            <HashLink to="/#features">Features</HashLink>
+            <HashLink to="/#features" smooth>Features</HashLink>
           </p>
           <p>
-            <HashLink to="/#pricing">Pricing</HashLink>
+            <HashLink to="/#pricing" smooth>Pricing</HashLink>
+          </p>
+          <p>
+            <HashLink to="/#contact" smooth>Contact</HashLink>
           </p>
 
           <p className="dropdown">
             <HashLink>Products</HashLink>
             <div className="dropdown-content">
-              <HashLink to="/insurance">Insurance</HashLink>
-              <HashLink to="/diagnosticCenter">Diagnostic Center</HashLink>
+              <HashLink to="/insurance" smooth>Insurance</HashLink>
+              <HashLink to="/diagnosticCenter" smooth>Diagnostic Center</HashLink>
             </div>
           </p>
         </div>
@@ -60,7 +63,7 @@ const Navbar = () => {
           <div className="llm__navbar-menu_container scale-up-center">
             <div className="llm__navbar-menu_container-links">
               <p>
-                <HashLink to="/#home">Home</HashLink>
+                <HashLink to="/#home" smooth>Home</HashLink>
               </p>
               <p>
                 <HashLink to="/#about" smooth>
@@ -68,18 +71,20 @@ const Navbar = () => {
                 </HashLink>
               </p>
               <p>
-                {/* <a href="#features">Features</a> */}
-                <HashLink to="/#features">Features</HashLink>
+             
+                <HashLink to="/#features" smooth>Features</HashLink>
               </p>
               <p>
-                <HashLink to="/#pricing">Pricing</HashLink>
+                <HashLink to="/#pricing" smooth>Pricing</HashLink>
               </p>
-              <p></p>
+              <p>
+            <HashLink to="/#contact" smooth>Contact</HashLink>
+          </p>
               <p className="dropdown">
                 <HashLink>Products</HashLink>
                 <div className="dropdown-content">
-                  <HashLink to="/insurance">Insurance</HashLink>
-                  <HashLink to="/diagnosticCenter">Diagnostic Center</HashLink>
+                  <HashLink to="/insurance" smooth>Insurance</HashLink>
+                  <HashLink to="/diagnosticCenter" smooth>Diagnostic Center</HashLink>
                 </div>
               </p>
             </div>

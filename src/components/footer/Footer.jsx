@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="flex">
       <div className="llm__footer-links">
       <p>
-            <HashLink to="/#home">Home</HashLink>
+            <HashLink to="/#home" smooth>Home</HashLink>
           </p>
           <p>
             <HashLink to="/#about" smooth>
@@ -33,17 +33,20 @@ const Footer = () => {
           </p>
           <p>
             {/* <a href="#features">Features</a> */}
-            <HashLink to="/#features">Features</HashLink>
+            <HashLink to="/#features" smooth>Features</HashLink>
           </p>
           <p>
-            <HashLink to="/#pricing">Pricing</HashLink>
+            <HashLink to="/#pricing" smooth>Pricing</HashLink>
+          </p>
+          <p>
+            <HashLink to="/#contact" smooth>Contact</HashLink>
           </p>
          
           <p className="products">
             <HashLink>Products</HashLink>
             <div className="products-content">
-              <HashLink to="/insurance">Insurance</HashLink>
-              <HashLink to="/diagnosticCenter">Diagnostic Center</HashLink>
+              <HashLink to="/insurance" smooth>Insurance</HashLink>
+              <HashLink to="/diagnosticCenter" smooth>Diagnostic Center</HashLink>
             </div>
           </p>
       </div>

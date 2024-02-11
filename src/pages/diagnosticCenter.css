@@ -14,11 +14,12 @@
     padding-top: 125px;
   color: #000;
   font-family: var(--font-family);
-  font-size: 22px;
+  font-size: 16pt;
   font-style: normal;
-  font-weight: 600;
+  text-align: justify;
+  /* font-weight: 600; */
   line-height: normal;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
     
 }
 .diagnosticCenter-header-content button{
@@ -38,9 +39,16 @@
    
 }
 .diagnosticCenter-header-img img{
-    width: 100%; /* Set image width to 100% to make it responsive */
+    width: 80%; /* Set image width to 100% to make it responsive */
     height: auto; /* Maintain aspect ratio */
     margin-top: 20px; 
+}
+@media screen and (max-width:1250px){
+    .diagnosticCenter-header-content p{
+        padding-top: 90px;
+
+    }
+    
 }
 @media screen and (max-width: 1024px){
     .diagnosticCenter-header-img{

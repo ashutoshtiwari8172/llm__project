@@ -11,14 +11,16 @@
 
 }
 .Insurance-header-content p{
-    padding-top: 50px;
-  color: #000;
-  font-family: var(--font-family);
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: capitalize;
+    padding-top: 80px;
+    color: #000;
+    font-family: var(--font-family);
+    font-size: 16pt;
+    font-style: normal;
+    text-align: justify;
+    /* font-weight: 600; */
+    line-height: normal;
+    /* text-transform: capitalize; */
+      
     
 }
 .Insurance-header-content button{
@@ -38,7 +40,7 @@
    margin-left: 4rem;
 }
 .Insurance-header-img img{
-    width: 100%; /* Set image width to 100% to make it responsive */
+    width: 80%; /* Set image width to 100% to make it responsive */
     height: auto; /* Maintain aspect ratio */
     margin-top: 20px; 
 }

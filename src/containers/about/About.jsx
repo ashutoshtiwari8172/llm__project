@@ -16,8 +16,7 @@ const About = () => {
           <p>
             Generating reports is a highly repetitive and time-consuming task.
             EPISUM is an AI powered platform where you can create highly
-            customized, industry-specific reports and generate precise summaries
-            using Chatgpt in no time. So whether you are a health diagnostic
+            customized, industry-specific reports and generate precise summaries in no time. So whether you are a health diagnostic
             center or an insurance company, generating those stacks of reports
             is just a click away.
           </p>
