@@ -29,9 +29,9 @@ const Navbar = () => {
           <p>
             <HashLink to="/#features" smooth>Features</HashLink>
           </p>
-          <p>
+          {/* <p>
             <HashLink to="/#pricing" smooth>Pricing</HashLink>
-          </p>
+          </p> */}
           <p>
             <HashLink to="/#contact" smooth>Contact</HashLink>
           </p>

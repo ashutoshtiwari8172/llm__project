@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0be8739c.css",
+    "main.js": "/static/js/main.d26b47ca.js",
+    "static/media/Project_69-08.jpg": "/static/media/Project_69-08.056fe8e8c0c1f25f5f3e.jpg",
+    "static/media/Designer (1).png": "/static/media/Designer (1).2df1f3db164495a8a4a3.png",
+    "static/media/diagnosis-medical-report-with-stethoscope-vector-19690081.jpg": "/static/media/diagnosis-medical-report-with-stethoscope-vector-19690081.3b955e4520a57b27ca02.jpg",
+    "static/media/header_img.png": "/static/media/header_img.fd8d7be3117ffd3277f7.png",
+    "static/media/PPObjectSans-Regular.woff": "/static/media/PPObjectSans-Regular.765ef8f46c9c02f262a4.woff",
+    "static/media/24727479.jpg": "/static/media/24727479.e4dd8f90e39da583a069.jpg",
+    "static/media/3775102.png": "/static/media/3775102.194f8a32de9069f2683b.png",
+    "static/media/signUp.png": "/static/media/signUp.9eea70fc5cad922f586a.png",
+    "static/media/login_1.jpeg": "/static/media/login_1.90ee4f808c14e56ee58c.jpeg",
+    "static/media/pngaaa.com-3324397.png": "/static/media/pngaaa.com-3324397.41f5e443abb6ce56d21c.png",
+    "static/media/customizable-icon-14.jpg": "/static/media/customizable-icon-14.d3b4196e7d3ae7efd6e3.jpg",
+    "static/media/Untitled (16).png": "/static/media/Untitled (16).c476867f2d8ae63d960f.png",
+    "index.html": "/index.html",
+    "main.0be8739c.css.map": "/static/css/main.0be8739c.css.map",
+    "main.d26b47ca.js.map": "/static/js/main.d26b47ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0be8739c.css",
+    "static/js/main.d26b47ca.js"
+  ]
+}
