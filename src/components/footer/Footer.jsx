@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="llm__footer-contact">
         <p>Contact Us:</p>
         <ul>
-          <li>Company Email: connect@episum.com</li>
+          <li>Company Email: <a href="mailto:connect@episum.com">connect@episum.com</a></li>
           
         </ul>
       </div>

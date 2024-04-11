@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0be8739c.css",
-    "main.js": "/static/js/main.d26b47ca.js",
+    "main.css": "/static/css/main.184916ab.css",
+    "main.js": "/static/js/main.69ac0970.js",
     "static/media/Project_69-08.jpg": "/static/media/Project_69-08.056fe8e8c0c1f25f5f3e.jpg",
     "static/media/Designer (1).png": "/static/media/Designer (1).2df1f3db164495a8a4a3.png",
     "static/media/diagnosis-medical-report-with-stethoscope-vector-19690081.jpg": "/static/media/diagnosis-medical-report-with-stethoscope-vector-19690081.3b955e4520a57b27ca02.jpg",
@@ -15,11 +15,11 @@
     "static/media/customizable-icon-14.jpg": "/static/media/customizable-icon-14.d3b4196e7d3ae7efd6e3.jpg",
     "static/media/Untitled (16).png": "/static/media/Untitled (16).c476867f2d8ae63d960f.png",
     "index.html": "/index.html",
-    "main.0be8739c.css.map": "/static/css/main.0be8739c.css.map",
-    "main.d26b47ca.js.map": "/static/js/main.d26b47ca.js.map"
+    "main.184916ab.css.map": "/static/css/main.184916ab.css.map",
+    "main.69ac0970.js.map": "/static/js/main.69ac0970.js.map"
   },
   "entrypoints": [
-    "static/css/main.0be8739c.css",
-    "static/js/main.d26b47ca.js"
+    "static/css/main.184916ab.css",
+    "static/js/main.69ac0970.js"
   ]
 }

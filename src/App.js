@@ -6,6 +6,7 @@ import './App.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Tagline from './containers/Tagline/Tagline';
+import Clients from './containers/clients/Clients';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Features />
                 {/* <Pricing /> */}
                 <Tagline/>
+                <Clients/>
                 <Footer />
             </div>
 
